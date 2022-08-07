@@ -19,8 +19,22 @@ function alternar_fundo(){
     const desc = document.querySelector('.contentOne')
     const desc2 = document.querySelector('.contentTwo')
     const desc3 = document.querySelector('.contentThree')
+    const proj1 = document.querySelector('.item-1')
+    const proj2 = document.querySelector('.item-2')
+    const proj3 = document.querySelector('.item-3')
+    const proj4 = document.querySelector('.item-4')
+    const tittle = document.querySelectorAll('.text-title')
 
+   
+    tittle[0].classList.toggle('textoDARK')
+    tittle[1].classList.toggle('textoDARK')
+    tittle[2].classList.toggle('textoDARK')
+    tittle[3].classList.toggle('textoDARK')
 
+    proj1.classList.toggle('fundoBRANCO')
+    proj2.classList.toggle('fundoBRANCO')
+    proj3.classList.toggle('fundoBRANCO')
+    proj4.classList.toggle('fundoBRANCO')
 
     desc3.classList.toggle('textoDARK')
     desc2.classList.toggle('textoDARK')
