@@ -16,17 +16,23 @@ function alternar_fundo(){
     const title5 = document.querySelector('#title5')
     const title6 = document.querySelector('#title6')
     const title7 = document.querySelector('#title7')
-    const desc = document.querySelector('.contentOne')
-    const desc2 = document.querySelector('.contentTwo')
-    const desc3 = document.querySelector('.contentThree')
+  
     const proj1 = document.querySelector('.item-1')
     const proj2 = document.querySelector('.item-2')
     const proj3 = document.querySelector('.item-3')
     const proj4 = document.querySelector('.item-4')
     const tittle = document.querySelectorAll('.text-title')
     const textBody = document.querySelectorAll('.text-body')
+    var descAll = document.querySelectorAll('.content')
 
-   
+   descAll[0].classList.toggle('textoDARK')
+   descAll[1].classList.toggle('textoDARK')
+   descAll[3].classList.toggle('textoDARK')
+   descAll[4].classList.toggle('textoDARK')
+   descAll[5].classList.toggle('textoDARK')
+   descAll[6].classList.toggle('textoDARK')
+   descAll[7].classList.toggle('textoDARK')
+
     tittle[0].classList.toggle('textoDARK')
     tittle[1].classList.toggle('textoDARK')
     tittle[2].classList.toggle('textoDARK')
@@ -42,9 +48,7 @@ function alternar_fundo(){
     proj3.classList.toggle('corprojblock')
     proj4.classList.toggle('corprojblock')
 
-    desc3.classList.toggle('textoDARK')
-    desc2.classList.toggle('textoDARK')
-    desc.classList.toggle('textoDARK')
+
     title1.classList.toggle('textoDARK')
     title2.classList.toggle('textoDARK')
     title3.classList.toggle('textoDARK')
