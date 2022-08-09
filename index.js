@@ -68,8 +68,19 @@ function alternar_fundo(){
 
 }
 
+function ativarNav() {
+   var navit = document.querySelector('#nav-itens')  
+   navit.classList.remove('list-nav')
 
-url = "https://api.github.com/users"
+   if(navit.classList == 'list-nav2'){
+     navit.classList.remove('list-nav2')
+     navit.classList.add('list-nav')
+   }else{
+    navit.classList.add('list-nav2');
+   }
+
+}
+
 
 
 

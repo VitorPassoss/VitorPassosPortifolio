@@ -20,6 +20,11 @@
     <main id="main">
         <div id="nav-conteiner">
             <nav id="nav">
+                <div onclick="ativarNav()" class="buttonlist">
+                    <i class="bi bi-list">
+
+                    </i>
+                </div>
                 <div class="toggleWrapper">
                     <input type="checkbox" class="dn" id="dn">
                     <label for="dn" class="toggle" onclick="alternar_fundo()">
@@ -37,13 +42,14 @@
                     </label>
                 </div>
                 
-                <ul class="list-nav">
+                <ul id="nav-itens" class="list-nav">
                     <li><a id="Home" href="#">Home</a></li>
                     <li><a id="About" href="#">Sobre mim</a></li>
                     <li><a id="Projects" href="#titulo-proj2">Projetos</a></li>
                     <li><a id="Contats" href="#">Contatos</a></li>
 
                 </ul>
+        
             </nav>
         </div>
         <div id="header-conteiner">
