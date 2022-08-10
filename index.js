@@ -1,3 +1,4 @@
+VerificarTela()
 
 function alternar_fundo(){
 
@@ -81,7 +82,12 @@ function ativarNav() {
 
 }
 
-
-
+function VerificarTela(){
+  let screenSize = window.screen.availWidth 
+  if( screenSize < 550){
+    alert(`Esse site não foi desenvolvido inicialmente para dispositivos mobile , 
+    qualquer problema,bug,ou melhoria por favor entrar em contato`)
+}
+}
 
 
