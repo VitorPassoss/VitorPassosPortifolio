@@ -16,8 +16,7 @@ function alternar_fundo(){
     const title4 = document.querySelector('#title4')
     const title5 = document.querySelector('#title5')
     const title6 = document.querySelector('#title6')
-    const title7 = document.querySelector('#title7')
-     
+    const title7 = document.querySelector('#title7') 
     const proj1 = document.querySelector('.item-1')
     const proj2 = document.querySelector('.item-2')
     const proj3 = document.querySelector('.item-3')
@@ -25,7 +24,12 @@ function alternar_fundo(){
     const tittle = document.querySelectorAll('.text-title')
     const textBody = document.querySelectorAll('.text-body')
     var descAll = document.querySelectorAll('.content')
+    const tituloapp = document.querySelector('#tituloapp')
+    const titulo2app = document.querySelector('#titulo2app')
+    const descCubeapp = document.querySelector('#contatosapp')
 
+    
+   
    descAll[0].classList.toggle('textoDARK')
    descAll[1].classList.toggle('textoDARK')
    descAll[2].classList.toggle('textoDARK')
@@ -33,7 +37,6 @@ function alternar_fundo(){
    descAll[4].classList.toggle('textoDARK')
    descAll[5].classList.toggle('textoDARK')
    descAll[6].classList.toggle('textoDARK')
-
 
     tittle[0].classList.toggle('textoDARK')
     tittle[1].classList.toggle('textoDARK')
@@ -66,10 +69,13 @@ function alternar_fundo(){
     n4.classList.toggle('textoDARK')
     txtBTN.classList.toggle('textoDARK')
     txtBTN2.classList.toggle('textoDARK')
+    tituloapp.classList.toggle('textoDARK')
+    titulo2app.classList.toggle('textoDARK')
+    descCubeapp.classList.toggle('textoDARK')
 
 }
 
-function ativarNav() {
+ function ativarNav(){
    var navit = document.querySelector('#nav-itens')  
    navit.classList.remove('list-nav')
 
@@ -79,12 +85,11 @@ function ativarNav() {
    }else{
     navit.classList.add('list-nav2');
    }
-
 }
 
 function VerificarTela(){
-  let screenSize = window.screen.availWidth 
-  if( screenSize < 550){
+  
+  if( screen.width < 550){
     alert(`Esse site não foi desenvolvido inicialmente para dispositivos mobile , 
     qualquer problema,bug,ou melhoria por favor entrar em contato`)
 }
