@@ -1,7 +1,5 @@
 VerificarTela()
 
-
-
 const menuItens = document.querySelectorAll('.list-nav a[href^="#"]');
 
 menuItens.forEach(item => {
@@ -83,6 +81,7 @@ function smoothScrollTo(endX, endY, duration) {
 
 
 function alternar_fundo(){
+  
     const body = document.body
     const Main = document.querySelector('#main')
     const txtBTN = document.querySelector('.Link')
@@ -143,7 +142,15 @@ function alternar_fundo(){
     tituloapp.classList.toggle('textoDARK')
     titulo2app.classList.toggle('textoDARK')
     descCubeapp.classList.toggle('textoDARK')
-}
+
+    
+    }
+  
+    
+
+ 
+
+
 
  function ativarNav(){
    var navit = document.querySelector('#nav-itens')  
@@ -167,9 +174,6 @@ function VerificarTela(){
 }
 }
 
-
-
-
 gsap.from(".itemNav .itemlist" , {
   opacity: 0,
   y: -10,
@@ -182,6 +186,57 @@ gsap.from(".desc-cube", {
   delay: 0.7,
   duration: 1,
   stagger: 0.5,
+});
+
+gsap.from("#tituloapp", {
+  opacity: 0,
+  delay: 1,
+  duration: 1,
+  stagger: 1,
+});
+
+gsap.from(".header-linkapp", {
+  opacity: 0,
+  delay: 1,
+  duration: 1,
+  stagger: 1,
+});
+
+
+
+
+gsap.from(".card", {
+  opacity: 0,
+  delay: 0.6,
+  duration: 0.5,
+  stagger: 0.2,
+});
+
+
+gsap.from(".bi-list", {
+  opacity: 0,
+  delay: 1,
+  duration: 1,
+  stagger: 1,
+});
+
+gsap.from(".card2", {
+  opacity: 0,
+  delay: 1,
+  duration: 1,
+  stagger: 1,
+});
+gsap.from("#titulo2app", {
+  opacity: 0,
+  delay: 1,
+  duration: 1,
+  stagger: 1,
+});
+gsap.from("#contatosapp", {
+  opacity: 0,
+  delay: 1,
+  duration: 1,
+  stagger: 1,
 });
 
 gsap.from(".bg ", {
