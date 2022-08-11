@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <title>portifolio</title>
 </head>
@@ -43,10 +45,10 @@
                 </div>
                 
                 <ul id="nav-itens" class="list-nav">
-                    <li><a id="Home" href="#">Home</a></li>
-                    <li><a id="About" href="#">Sobre mim</a></li>
-                    <li><a id="Projects" href="#titulo-proj2">Projetos</a></li>
-                    <li><a id="Contats" href="#">Contatos</a></li>
+                    <li class="itemNav"><a id="Home"  class="itemlist" href="#">Home</a></li>
+                    <li class="itemNav"><a id="About" class="itemlist" href="#">Sobre mim</a></li>
+                    <li class="itemNav"><a id="Projects" class="itemlist" href="#titulo-proj2">Projetos</a></li>
+                    <li class="itemNav"><a id="Contats" class="itemlist"   href="#">Contatos</a></li>
 
                 </ul>
         
@@ -353,10 +355,16 @@
             font-size: 15px;
          ">EM DESENVOLVIMENTO</h1>
      </footer>
-   
-   
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- ==== GSAP CDN ==== -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+     <!-- ==== SCRIPT.JS ==== -->
+     <script src="./script.js" defer></script>
+     
 </body>
 <script src="index.js"></script>
+
 
 
 </html>

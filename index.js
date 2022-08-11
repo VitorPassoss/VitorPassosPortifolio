@@ -1,16 +1,92 @@
 VerificarTela()
 
-function alternar_fundo(){
 
+
+const menuItens = document.querySelectorAll('.list-nav a[href^="#"]');
+
+menuItens.forEach(item => {
+   item.addEventListener('click', scrollToId)
+});
+
+function scrollToId(event){
+  event.preventDefault();
+   
+  const to = getScrollTopByHref(event.target) - 70
+  
+  scrollToPosition(to)
+}
+
+function getScrollTopByHref(element){
+  const id = element.getAttribute('href')
+  return document.querySelector(id).offsetTop
+}
+
+function scrollToPosition(to) {
+  smoothScrollTo(0, to , 750);
+  gsap.from(".item-1", {
+    opacity: 0,
+    x: -10,
+    delay: 0.5,
+    duration: 0.8,
     
+   
+  });
+  gsap.from(".item-2", {
+    opacity: 0,
+    y: +10,
+    delay: 0.5,
+    duration: 0.8,
     
+   
+  });
+  gsap.from(".item-3", {
+    opacity: 0,
+    x: +10,
+    delay: 0.5,
+    duration: 0.8,
+    
+   
+  });
+}
+
+/**
+ * Smooth scroll animation
+ * @param {int} endX: destination x coordinate
+ * @param {int} endY: destination y coordinate
+ * @param {int} duration: animation duration in ms
+ */
+function smoothScrollTo(endX, endY, duration) {
+  const startX = window.scrollX || window.pageXOffset;
+  const startY = window.scrollY || window.pageYOffset;
+  const distanceX = endX - startX;
+  const distanceY = endY - startY;
+  const startTime = new Date().getTime();
+
+  duration = typeof duration !== 'undefined' ? duration : 400;
+
+  // Easing function
+  const easeInOutQuart = (time, from, distance, duration) => {
+    if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
+    return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+  };
+
+  const timer = setInterval(() => {
+    const time = new Date().getTime() - startTime;
+    const newX = easeInOutQuart(time, startX, distanceX, duration);
+    const newY = easeInOutQuart(time, startY, distanceY, duration);
+    if (time >= duration) {
+      clearInterval(timer);
+    }
+    window.scroll(newX, newY);
+  }, 1000 / 60); // 60 fps
+};
+
+
+function alternar_fundo(){
     const body = document.body
     const Main = document.querySelector('#main')
     const txtBTN = document.querySelector('.Link')
     const txtBTN2 = document.querySelector('.Link2')
-
-
-
     const n1 = document.querySelector('#Home')
     const n2 = document.querySelector('#About')
     const n3 = document.querySelector('#Projects')
@@ -32,33 +108,23 @@ function alternar_fundo(){
     const tituloapp = document.querySelector('#tituloapp')
     const titulo2app = document.querySelector('#titulo2app')
     const descCubeapp = document.querySelector('#contatosapp')
-    
-   
-   
-   descAll[0].classList.toggle('textoDARK')
-   descAll[1].classList.toggle('textoDARK')
-   descAll[2].classList.toggle('textoDARK')
-   descAll[3].classList.toggle('textoDARK')
-   descAll[4].classList.toggle('textoDARK')
-   descAll[5].classList.toggle('textoDARK')
-   descAll[6].classList.toggle('textoDARK')
- 
+    descAll[0].classList.toggle('textoDARK')
+    descAll[1].classList.toggle('textoDARK')
+    descAll[2].classList.toggle('textoDARK')
+    descAll[3].classList.toggle('textoDARK')
+    descAll[4].classList.toggle('textoDARK')
+    descAll[5].classList.toggle('textoDARK')
+    descAll[6].classList.toggle('textoDARK')
     tittle[0].classList.toggle('textoDARK')
     tittle[1].classList.toggle('textoDARK')
     tittle[2].classList.toggle('textoDARK')
     tittle[3].classList.toggle('textoDARK')
-    
-    
-    
- 
-
     proj1.classList.toggle('corprojblock')
     proj2.classList.toggle('corprojblock')
     proj3.classList.toggle('corprojblock')
     proj4.classList.toggle('corprojblock')
     textBody[0].classList.toggle('textoDARK')
     textBody[1].classList.toggle('textoDARK')
-
     title1.classList.toggle('textoDARK')
     title2.classList.toggle('textoDARK')
     title3.classList.toggle('textoDARK')
@@ -77,7 +143,6 @@ function alternar_fundo(){
     tituloapp.classList.toggle('textoDARK')
     titulo2app.classList.toggle('textoDARK')
     descCubeapp.classList.toggle('textoDARK')
-
 }
 
  function ativarNav(){
@@ -102,4 +167,70 @@ function VerificarTela(){
 }
 }
 
+
+
+
+gsap.from(".itemNav .itemlist" , {
+  opacity: 0,
+  y: -10,
+  delay: 0.6,
+  duration: 0.8,  
+});
+
+gsap.from(".desc-cube", {
+  opacity: 0,
+  delay: 0.7,
+  duration: 1,
+  stagger: 0.5,
+});
+
+gsap.from(".bg ", {
+  opacity: 0,
+  y: -10,
+  delay: 1,
+  duration: 1,
+ 
+});
+
+gsap.from(".bg2 ", {
+  opacity: 0,
+  y: -10,
+  delay: 1,
+  duration: 1,
+ 
+ 
+});
+
+gsap.from(".toggleWrapper", {
+  opacity: 0,
+  y: -10,
+  delay: 0.7,
+  duration: 0.7,
+ 
+});
+
+gsap.from(".item-1", {
+  opacity: 0,
+  x: -10,
+  delay: 1.2,
+  duration: 1.2,
+  
+ 
+});
+gsap.from(".item-2", {
+  opacity: 0,
+  y: +10,
+  delay: 1.2,
+  duration: 1.2,
+  
+ 
+});
+gsap.from(".item-3", {
+  opacity: 0,
+  x: +10,
+  delay: 1.2,
+  duration: 1.2,
+  
+ 
+});
 
