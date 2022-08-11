@@ -17,6 +17,7 @@
 }
 body{
      max-width: 1920px;
+     min-width: 300px;
      background-color: #414141;
      color: #E4E4E4;
      transition: 0.4s;
@@ -4564,15 +4565,14 @@ body{
   width: 370px;
   height: 450px;
   z-index: 25 ;
-  background-color: #2A2A2A;  
+  
   overflow: hidden;
   box-shadow: 0px 0px 10px #00F060;
 }
 .item-2{
   width: 370px;
   height: 450px;
-  z-index: 25 ;
-  background-color: #2A2A2A;  
+  z-index: 25 ; 
   overflow: hidden;
   box-shadow: 0px 0px 10px #00F060;
 }
@@ -4580,7 +4580,7 @@ body{
   width: 370px;
   height: 450px;
   z-index: 25 ;
-  background-color: #2A2A2A;  
+
   overflow: hidden;
   box-shadow: 0px 0px 10px #00F060;
 }
@@ -4722,8 +4722,8 @@ body{
   font-size: 50px;
   display: flex;
   position: relative;
-  right:  -75px;
-  top: -10px;
+  right:  -65px;
+  top: 5px;
   z-index: 1000;
 }
 #header-conteiner{
@@ -5211,21 +5211,21 @@ body{
 
 .item-1{
   width: 350px;
-  height: 500px;
+  height: 550px;
   z-index: 25 ;
   background-color: #2A2A2A;  
   overflow: hidden;
 }
 .item-2{
   width: 350px;
-  height: 500px;
+  height: 550px;
   z-index: 25 ;
   background-color: #2A2A2A;  
   overflow: hidden;
 }
 .item-3{
   width: 350px;
-  height: 500px;
+  height: 550px;
   z-index: 25 ;
   background-color: #2A2A2A;  
   overflow: hidden;
