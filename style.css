@@ -4341,8 +4341,10 @@ body{
 }
 
 .toggleWrapper {
-  left: 15%;
-  top: 28%;
+  
+  position: relative;
+  left: -250px;
+  top: -14px;
 }
 
 .toggle {
@@ -4562,23 +4564,23 @@ body{
 }
 
 .item-1{
-  width: 370px;
-  height: 450px;
+  width: 360px;
+  height: 500px;
   z-index: 25 ;
   
   overflow: hidden;
   box-shadow: 0px 0px 10px #00F060;
 }
 .item-2{
-  width: 370px;
-  height: 450px;
+  width: 360px;
+  height: 500px;
   z-index: 25 ; 
   overflow: hidden;
   box-shadow: 0px 0px 10px #00F060;
 }
 .item-3{
-  width: 370px;
-  height: 450px;
+  width: 360px;
+  height: 500px;
   z-index: 25 ;
 
   overflow: hidden;

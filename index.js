@@ -2,10 +2,15 @@ VerificarTela()
 
 function alternar_fundo(){
 
+    
+    
     const body = document.body
     const Main = document.querySelector('#main')
     const txtBTN = document.querySelector('.Link')
     const txtBTN2 = document.querySelector('.Link2')
+
+
+
     const n1 = document.querySelector('#Home')
     const n2 = document.querySelector('#About')
     const n3 = document.querySelector('#Projects')
@@ -90,7 +95,7 @@ function alternar_fundo(){
 function VerificarTela(){
   
   if( screen.width < 550){
-    alert(`Esse site não foi desenvolvido inicialmente para dispositivos mobile , 
+    alert(`(commit recem feito) Esse site não foi desenvolvido inicialmente para dispositivos mobile , 
     qualquer problema,bug,ou melhoria por favor entrar em contato 
     o tamanho da tela do seu dispositivo é : ${screen.width}px`)
 }
