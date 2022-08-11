@@ -22,13 +22,13 @@ function alternar_fundo(){
     const proj3 = document.querySelector('.item-3')
     const proj4 = document.querySelector('.item-4')
     const tittle = document.querySelectorAll('.text-title')
-    const textBody = document.querySelectorAll('.text-body')
     var descAll = document.querySelectorAll('.content')
+    var textBody = document.querySelectorAll('.text-body') 
     const tituloapp = document.querySelector('#tituloapp')
     const titulo2app = document.querySelector('#titulo2app')
     const descCubeapp = document.querySelector('#contatosapp')
-
     
+   
    
    descAll[0].classList.toggle('textoDARK')
    descAll[1].classList.toggle('textoDARK')
@@ -37,22 +37,22 @@ function alternar_fundo(){
    descAll[4].classList.toggle('textoDARK')
    descAll[5].classList.toggle('textoDARK')
    descAll[6].classList.toggle('textoDARK')
-
+ 
     tittle[0].classList.toggle('textoDARK')
     tittle[1].classList.toggle('textoDARK')
     tittle[2].classList.toggle('textoDARK')
     tittle[3].classList.toggle('textoDARK')
-
-    textBody[0].classList.toggle('textoDARK')
-    textBody[1].classList.toggle('textoDARK')
-    textBody[2].classList.toggle('textoDARK')
-    textBody[3].classList.toggle('textoDARK')
+    
+    
+    
+ 
 
     proj1.classList.toggle('corprojblock')
     proj2.classList.toggle('corprojblock')
     proj3.classList.toggle('corprojblock')
     proj4.classList.toggle('corprojblock')
-
+    textBody[0].classList.toggle('textoDARK')
+    textBody[1].classList.toggle('textoDARK')
 
     title1.classList.toggle('textoDARK')
     title2.classList.toggle('textoDARK')

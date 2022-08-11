@@ -56,10 +56,6 @@ body{
 }
 
 
-.text-body{
-  font-family: 'Montserrat', sans-serif;
-}
-
 
 .list-nav li a {
     width: 50px;
@@ -202,11 +198,11 @@ button {
 
 .fundoBRANCO{
     background-color: #bebaba !important;
-    color: #2A2A2A !important;
+    color: #000000 !important;
 }
 
 .textoDARK{
-    color: #2A2A2A !important;
+    color: #000000 !important;
 }
 
 
@@ -711,7 +707,7 @@ flex-direction: row;
  }
  
  .card3-details {
-  color: black;
+ 
   height: 100%;
   gap: .5em;
   display: grid;
@@ -877,6 +873,7 @@ flex-direction: row;
 
     .corprojblock{
       background-color: white;
+      color: #000000;
     }
 
     .textBody{
