@@ -89,6 +89,7 @@ function alternar_fundo(){
      navit.classList.add('list-nav')
    }else{
     navit.classList.add('list-nav2');
+    navit.classList.remove('list-nav')
    }
 }
 
