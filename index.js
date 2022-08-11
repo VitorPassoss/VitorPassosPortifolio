@@ -91,7 +91,8 @@ function VerificarTela(){
   
   if( screen.width < 550){
     alert(`Esse site não foi desenvolvido inicialmente para dispositivos mobile , 
-    qualquer problema,bug,ou melhoria por favor entrar em contato`)
+    qualquer problema,bug,ou melhoria por favor entrar em contato 
+    o tamanho da tela do seu dispositivo é : ${screen.width}px`)
 }
 }
 
