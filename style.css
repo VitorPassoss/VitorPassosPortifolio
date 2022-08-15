@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'CODE';
 }
 
 @font-face {
@@ -799,11 +800,11 @@ flex-direction: row;
 }
 
 .item-3{
- 
-  width: 365px;
+  z-index: 26;
+  width: 370px;
   height: 500px;
-  z-index: 25 ;
-  background-color: #2A2A2A;
+  overflow: hidden;
+  background-color: #2A2A2A;  
 }
 
 .item-4{
@@ -847,6 +848,26 @@ flex-direction: row;
   
 }
 .img-2-pg:hover{
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(1.1);
+}
+
+
+.img-3-pg{
+  background-image: url(.//componentes/proj3.jfif);
+
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: 50%;
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+.img-3-pg:hover{
   -moz-transform: scale(0.5);
   -webkit-transform: scale(0.5);
   transform: scale(1.1);
