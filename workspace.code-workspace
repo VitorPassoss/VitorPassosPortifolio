@@ -1,4 +1,9 @@
 {
-	"folders": [],
+	"folders": [
+		{
+			"name": "landing-page-kaspersky",
+			"path": "../landing-page-kaspersky"
+		}
+	],
 	"settings": {}
 }

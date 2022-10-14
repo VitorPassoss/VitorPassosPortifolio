@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'CODE';
+   
 }
 
 @font-face {
@@ -15,6 +15,15 @@
 
 .card2 img {
   display: none;
+}
+.center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.perfil-div{
+  margin-top: 40px;
 }
 body{
      max-width: 1920px;
@@ -667,7 +676,7 @@ flex-direction: row;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -280px;
+  margin-top: -60px;
   
   padding-top: 70px;
 }
@@ -677,6 +686,7 @@ flex-direction: row;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
   gap: 20px;
+  font-family: 'Exo', sans-serif;
   
 }
 
@@ -759,11 +769,11 @@ flex-direction: row;
  /*Text*/
  .text-title {
   text-align: start;
-  margin-top: 470px;
+  margin-top: 155%;
   font-size: 1.2em;
   font-weight: bold;
   color: #D9D9D9;
-  font-family: 'CODE';
+ 
  }
  
  /*Hover*/
@@ -873,19 +883,32 @@ flex-direction: row;
   transform: scale(1.1);
 }
 
+.skillnew{
+  width: 53%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-radius: 25px;
+  background-color: #141414;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;  
+  box-shadow: 2px 10px 10px black;
+}
 
 
 .titulo-proj{
   text-align: center;
   
-      border: 3px solid #00F060;
-      box-shadow: 0px 0px 10px #00F060;
+      border-bottom: 3px solid #00F060;
+      box-shadow: 0px 2px 2px 2px 10px #00F060;
       padding: 15px;
-      margin: 350px  auto ;
+      margin: 30px  auto ;
       font-family: 'CODE';
       font-size: 80px;
-      width: 450px;
-      height: 70px;
+      width: 430px;
+      height: 90px;
 
 }
 
@@ -2976,6 +2999,18 @@ body{
   border: 0px solid #00F060;
 }
 
+.skillnew{
+  width: 100%;
+  border-radius: 25px;
+  background-color: #141414;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;  
+  box-shadow: 2px 10px 10px black;
+}
+
 }
 
 @media (min-width:450px) and (max-width: 550px){
@@ -3455,11 +3490,34 @@ body{
   color: #D9D9D9;
   transition: 0.4s;
   border: 0px solid #00F060;
+
+}
+.skillnew{
+  width: 100%;
+  border-radius: 25px;
+  background-color: #141414;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;  
+  box-shadow: 2px 10px 10px black;
 }
 
 }
 
 @media (min-width:430px) and (max-width: 450px){
+  .skillnew{
+    width: 100%;
+    border-radius: 25px;
+    background-color: #141414;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;  
+    box-shadow: 2px 10px 10px black;
+  }
   .card3:hover .card3-button {
     transform: translate(-50%, 50%);
     opacity: 1;
